@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="box-container">
+        <div class="box">
+            <h2 class="title">Bill Calculator</h2>
+            <label class="lbl">Bill:</label><br>
+            <input class="input" type="number"><br>
+            <label class="lbl">Tax(%):</label><br>
+            <input class="input" type="number"><br>
+            <button onclick="calculateBill()" id="calculate-btn">Calculate</button>
+            <p>Total: <span id="output"></span></p>
+            <p id="message"></p>
+        </div>
+    </div>
+
+
+    <script src="./project.js"></script>
+</body>
+</html>

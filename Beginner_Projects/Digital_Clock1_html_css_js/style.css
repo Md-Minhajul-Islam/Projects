@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    text-align: center;
+}
+.title{
+    letter-spacing: 3px;
+    padding-right: 50px;
+}
+
+.clock{
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.hour-div, .minute-div, .second-div, #am-pm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px black;
+}
+#hour, #minute, #second{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    color: white;
+    margin: 20px 30px;
+    text-shadow: 1px 3px 2px black;
+}
+.hour-title, .minute-title, .second-title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    background-color: yellow;
+}
+
+.hour-div{
+    background-color: rgb(24, 66, 103);
+}
+.minute-div{
+    background-color: rgb(69, 112, 114);
+}
+.second-div{
+    background-color: rgb(29, 109, 109);
+}
+#am-pm{
+    background-color: bisque;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 110px;
+    padding: 5px 15px;
+}
+
+

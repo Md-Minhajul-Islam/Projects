@@ -1,0 +1,49 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    padding: 5px;
+}
+
+.container{
+    max-width: 400px;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.title{
+    margin-top: 5px;
+    font-size: 35px;
+}
+
+#time{
+    font-size: 50px;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+button{
+    padding: 12px 30px;
+    margin: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#start-btn{
+    background-color: rgb(11, 142, 11);
+}
+#stop-btn{
+    background-color: red;
+}
+#reset-btn{
+    background-color: rgb(48, 47, 47);
+}
