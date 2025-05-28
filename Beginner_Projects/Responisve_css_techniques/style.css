@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+/* Relative Padding */
+.container{
+    
+    /* normally 1 rem = 16px
+    if screen is wide (8% >= 3rem) than take 3rem padding
+    else take 8% padding  */
+    padding: min(3rem, 8%);
+    width: max(25rem, 40%);
+    background-color: aliceblue;
+    border-radius: 1em;   
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Responsize font size */
+
+h1{
+
+    /* 1vw (viewporth width) = 1% of the width of the browser window. */
+    /* used calc(3vw + 1rem) because, vw is not zoomable, 
+    when we add rem or any other unit it becomes zoomable */
+    /* min     preferred     max  */
+    font-size: clamp(1rem, calc(3vw + 1rem), 5rem);                    
+}
+
+
+/* use
+height = 100 dvh instead of 100vh
+it will work perfectly on phone.
+
+we can use 
+height = 100 vh
+height = 100 dvh 
+both. if one will not work
+perfectly on browser then browser
+will ignore it */

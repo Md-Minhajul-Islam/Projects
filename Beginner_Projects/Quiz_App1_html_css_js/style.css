@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.config-container{
+    background-color: rgb(108, 80, 220);
+    color: white;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    padding: min(1rem, 5%);
+    border-radius: 0.3rem;
+}
+.config-container button{
+    color: rgb(72, 41, 198);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    border-radius: 0.3rem;
+}
+.config-container button:hover{
+    transform: scale(1.02); 
+    transition: all 0.3s ease;
+    filter: brightness(1.2);
+}
+.category-options{
+    margin: 2rem 0;
+}
+.category-options .category-buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.category-buttons button{
+    border: none;
+    box-shadow: 0 2px 5px black;
+}
+.question-options .question-buttons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.config-container .start-quiz-btn{
+    padding: 0.5rem 1rem;
+}
+.config-container .start-quiz-btn:hover{
+    background-color:  rgb(88, 58, 209);
+    color: white;
+    outline: 1px solid white;
+}
+
+.config-active{
+    background-color: rgb(115, 80, 255);
+    color: white !important;
+}
+
+.quiz-content{
+    background-color: rgb(108, 80, 220);
+    color: white;
+    max-width: 450px;
+    width: 100%;
+    padding: min(1rem, 5%);
+    border-radius: 0.3rem;
+}
+
+.quiz-content header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+.quiz-timer{
+    display: flex;
+    align-items: center;
+}
+.quiz-content .quiz-question{
+    margin: 1.5rem 0;
+}
+.quiz-question .answer-options{
+    list-style: none;
+}
+.answer-options .answer-option{
+    padding: 0.7rem 0.5rem;
+    background-color: white;
+    color: rgb(65, 31, 199);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.quiz-content footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz-footer .next-question-btn{
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: rgb(65, 31, 199);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.answer-option:hover{
+    transform: scale(1.02); 
+    transition: all 0.3s ease;
+    filter: brightness(1.2);
+}
+.next-question-btn:hover{
+    transform: scale(1.02); 
+    transition: all 0.3s ease;
+    filter: brightness(1.2);
+    background-color:  rgb(65, 31, 199);
+    color: white;
+    outline: 1px solid white;
+}
+.quiz-content .answer-options .correct-answer{
+    background-color: #c5edce;
+    color: #104f1e;
+}
+.quiz-content .answer-options .incorrect-answer{
+    background-color: #f2c5c9;
+    color: #b1212f;
+}
+.quiz-content ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz-content footer{
+    border-top: 1px solid white;
+    padding-top: 1rem;
+}
+.result-container{
+    background-color: rgb(108, 80, 220);
+    color: white;
+    max-width: 450px;
+    width: 100%;
+    padding: min(1rem, 5%);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.result-container .result-img{
+    width: 100px;
+}
+.result-container .try-again-btn{
+    color: rgb(65, 31, 199);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.result-container .result-message{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.result-container .result-title{
+    margin-top: 2rem;
+}
+.result-container .result-img{
+    margin-top: 2rem;
+}
+.try-again-btn:hover{
+    transform: scale(1.02); 
+    transition: all 0.3s ease;
+    filter: brightness(1.2);
+}
+.hide{
+    display: none;
+}

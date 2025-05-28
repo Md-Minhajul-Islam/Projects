@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="heading">CURRENCY CONVERTER</h2>
+        <div class="converter">
+            <select id="first-currency">
+                <option selected value="BDT">BDT</option>
+                <option value="CAD">CAD</option>
+                <option value="AFN">AFN</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+            </select>
+            <input type="number" id="first-input">
+        </div>
+        <div class="converter">
+            <select id="second-currency">
+                <option value="BDT">BDT</option>
+                <option value="CAD">CAD</option>
+                <option value="AFN">AFN</option>
+                <option value="EUR">EUR</option>
+                <option selected value="USD">USD</option>
+                <option value="INR">INR</option>
+            </select>
+            <input disabled type="number" id="second-input">
+        </div>
+        <p id="exchange-rate">1 BDT = 0.0082 USD</p>
+    </div>
+
+    <script src="./project.js"></script>
+
+</body>
+</html>

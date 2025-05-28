@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Graph</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-div">
+            <canvas id="left-graph"></canvas>
+            <input id="left-input" type="number" placeholder="Enter Today's Solved Problem Number">
+            <button id="left-btn" type="submit">Submit</button>
+        </div>
+        <div class="right-div">
+            <canvas id="right-graph"></canvas>
+            <input id="right-input" type="number" placeholder="Enter Today's Completed Project Number">
+            <button id="right-btn" type="submit">Submit</button>
+        </div>
+    </div>
+
+    <script src="./project.js"></script>
+</body>
+</html>

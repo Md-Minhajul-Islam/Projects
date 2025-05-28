@@ -1,0 +1,33 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.container{
+    width: 400px;
+    padding: 0 30px;
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+.heading{
+    margin-bottom: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.converter{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#first-currency, #second-currency, #first-input, #second-input{
+    font-size: 20px;
+    outline: none;
+}
+#first-input, #second-input{
+    text-align: right;
+}
+

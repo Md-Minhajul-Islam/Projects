@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./logo.svg" alt="logo">
+        <ul class="navbar-list">
+            <li><a onclick="openSlide(event)" href="#" id="edit">Edit</a></li>
+            <li><a onclick="window.print()" href="#" id="download">Download</a></li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <div id="name" class="title">MD. MINHAJUL ISLAM</div>
+        <div class="bio">
+            <span id="address">Chittagong, Bangladesh</span><span> | </span>
+            <span id="phone">(+000)xxxxxxx</span><span> | </span>
+            <span id="mail">abcdef@mail.com</span><span> | </span>
+            <span id="social">www.linkedin.com/in/md-minhajul-islam-/</span>
+        </div>
+        <div class="main">
+            <p class="objective-title title">OBJECTIVE </p>
+            <p id="objective">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Eaque rerum, ex minus illo accusamus aliquam porro officiis?
+                Commodi voluptatum vero, aspernatur fugiat a tenetur iste non hic,
+                accusamus ducimus inventore dolorem architecto ipsa deserunt debitis?
+                Adipisci ipsam blanditiis quisquam rerum perspiciatis vero tempora ducimus aut sequi hic ipsum,
+                modi soluta, corrupti eius. Quidem sequi hic incidunt labore ipsa esse omnis aut,
+                nisi totam! Est repellendus omnis veritatis enim aliquam incidunt quia esse dolores magni porro,
+                nam aspernatur doloribus reprehenderit,
+                consectetur ipsum sequi velit inventore nihil blanditiis molestiae deleniti tempora officia possimus?
+                Qui accusantium incidunt, distinctio consequuntur doloremque nostrum voluptatibus quos?
+
+            </p>
+            <p class="experiences-title title">EXPERIENCES</p>
+            <ul id="experiences">
+                <li>Contestant at ICPC Dhaka Regional 2023 - BUBT</li>
+                <li>Participated in PU – CSE IT Fest 2024 | Premier University, Chittagong</li>
+                <li>Participated in IoT Project Showcase 2023 | BGC Trust University Bangladesh</li>
+                <li>Participated in Intra University Programming Contest, Summer Tech Fest 2022 | BGC Trust University
+                    Bangladesh</li>
+            </ul>
+            <p class="education-title title">EDUCATION</p>
+            <ul id="education">
+                <li>BGC Trust University Bangladesh – Chittagong, Bangladesh |
+                    Bachelor of Science in CSE | 2022 – Present</li>
+            </ul>
+            <p class="skills-title title">SKILLS</p>
+            <ul id="skills">
+                <li>Comfortable in C, C++, Data Structures and Algorithms</li>
+                <li>Familiar with HTML, CSS, JavaScript, PHP</li>
+                <li>Problem Solving</li>
+                <li>Teamwork and Active Listening</li>
+            </ul>
+            <p class="achievements-title title">ACHIEVEMENTS</p>
+            <ul id="achievements">
+                <li>Codeforces | Md_Minhaj | Max rating: 1392</li>
+                <li>Codechef | Md_Minhaj | Max rating: 1712</li>
+            </ul>
+            <p class="certifications-title title">CERTIFICATIONS</p>
+            <ul id="certifications">
+                <li>The Art of Public Speaking | Issued by BYLC | Certificate ID: 126, 810</li>
+                <li>Social Media Etiquette for Professionals | Issued by BYLC | Certificate ID: 127, 136</li>
+                <li>Student Engagement in Classroom | Issued by BYLC | Certificate ID: 127, 135</li>
+            </ul>
+        </div>
+
+        <div class="slide-panel">
+            <button class="close-btn" onclick="closePanel(event)">✖</button>
+            <input id="name-input" placeholder="Name"></input> <button onclick="setName(event)" class="submit"
+                type="submit">Submit</button><br><br>
+
+            <input id="address-input" placeholder="Address"></input> <button onclick="setAddress(event)" class="submit"
+                type="submit">Submit</button><br><br>
+
+            <input id="phone-input" placeholder="Phone"></input> <button onclick="setPhone(event)" class="submit"
+                type="submit">Submit</button><br><br>
+
+            <input id="mail-input" placeholder="Mail"></input> <button onclick="setMail(event)" class="submit"
+                type="submit">Submit</button><br><br>
+
+            <input id="social-input" placeholder="Social"></input> <button onclick="setSocial(event)" class="submit"
+                type="submit">Submit</button><br><br>
+
+            <textarea id="objective-input" placeholder="Objective" rows="10"></textarea> <button
+                onclick="setObjective(event)" class="submit" type="submit">Submit</button><br><br>
+
+            <p class="experiences-title title">EXPERIENCES</p>
+            <input type="number" id="num-of-experiences-txt-fd-input" placeholder="Number of text field"></input>
+            <button onclick="takeExperiences(event)" class="submit" type="submit">Submit</button><br><br>
+            <div id="experiences-input"></div>
+
+            <p class="education-title title">EDUCATION</p>
+            <input type="number" id="num-of-education-txt-fd-input" placeholder="Number of text field"></input> <button
+                onclick="takeEducation(event)" class="submit" type="submit">Submit</button><br><br>
+            <div id="education-input"></div>
+
+            <p class="skills-title title">SKILLS</p>
+            <input type="number" id="num-of-skills-txt-fd-input" placeholder="Number of text field"></input> <button
+                onclick="takeSkills(event)" class="submit" type="submit">Submit</button><br><br>
+            <div id="skills-input"></div>
+
+            <p class="achievements-title title">ACHIEVEMENTS</p>
+            <input type="number" id="num-of-achievements-txt-fd-input" placeholder="Number of text field"></input>
+            <button onclick="takeAchievements(event)" class="submit" type="submit">Submit</button><br><br>
+            <div id="achievements-input"></div>
+
+            <p class="certifications-title title">CERTIFICATIONS</p>
+            <input type="number" id="num-of-certifications-txt-fd-input" placeholder="Number of text field"></input>
+            <button onclick="takeCertifications(event)" class="submit" type="submit">Submit</button><br><br>
+            <div id="certifications-input"></div>
+        </div>
+    </div>
+    <script src="./project.js"></script>
+</body>
+
+</html>

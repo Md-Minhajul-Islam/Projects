@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+.left-div, .right-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#left-graph, #right-graph{
+    max-width: 600px;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+}
+#left-graph{
+    background-color: aliceblue;
+}
+#right-graph{
+    background-color: antiquewhite;
+}
+#left-input, #right-input{
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    border: 2px solid black;
+}
+#left-btn, #right-btn{
+    margin: 15px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#left-btn{
+    background-color: rgb(31, 120, 198);
+}
+#right-btn{
+    background-color: rgb(191, 131, 53);
+}
+@media (max-width: 1024px) {
+    .container {
+      grid-template-columns: 1fr; /* 1 column layout */
+    }
+}
